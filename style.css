@@ -1,40 +1,52 @@
-input, label {
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
     margin: 5px 5px;
   }
   
-  .form-group {
+.form-group {
     margin: 30px auto;
-    width: 450px;
+    max-width: 50%;
   }
   
-  .form-control {
+.form-control input {
     float: left;
   }
   
-  #inputStreet {
+#Street {
     width: 100%;
   }
   
-  #inputCity {
+#City {
     width: 50%;
   }
   
-  #inputState {
-    width: 15%;
+#State {
+    width: 20%;
   }
   
-  #inputZip {
-    width: 28%;
+#Zip {
+    width: 30%;
   }
   
-  #inputCounty {
-    width: 45%;
-  }
-  
-  #inputCountry {
+#County {
     width: 50%;
   }
   
-  #inputTelephone {
+#Country {
+    width: 50%;
+  }
+  
+#Telephone {
     width: 100%;
   }
+
+#register  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
