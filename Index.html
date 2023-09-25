@@ -14,184 +14,271 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
+    <link rel="stylesheet" href="/style.css" type="text/css">
 </head>
-<body class = "text-center" style="font-family:'lato', sans-serif;">
+
+<body class="text-center" style="font-family: 'lato', sans-serif;">
 
     <div id="loading-chicken">
 
     </div>
 
     <div class="mt-3">
-
         <div id="logo">
             <img src="/Images/smart-chicken-logo.png" style="max-width: 15%;" alt="Smart Chicken Coop Logo">
         </div>
     
-        <div id="login-body"></div>
+        <div id="login-body">
 
             <div class="header mt-1">
                 <h1><strong>Sign In</strong></h1>
             </div>
-            
+
             <div class="mt-5">
+                
                 <form>
+
                     <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Email" id="loginEmail" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)">
-
-                        <input class="form-control mt-3" placeholder="Password" type=password id="loginPassword" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)">
-
-                        <input class="ms-2 mt-3" type="checkbox" id="login-Remember-Me"/>
-
-                        <label for="login-Remember-Me" style="font-size: 12px;">Remember me</label>
-
-                        <a style="cursor: pointer; color: black;" class="ms-5" style="color: inherit; font-size: 14px;"> <strong>Forgot your password?</strong></a>
-
-                        <button class="mt-4" style="background-color: #be4921; color: white; padding: 0.3%; min-width: 300px; border: 2px solid white;" type="button" id="btn-login"><strong>SIGN IN</strong></button> 
-
+                            <input class="form-control" type="email" placeholder="Email" id="loginEmail" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)">
+                            <input class="form-control mt-3" placeholder="Password" type=password id="loginPassword" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)">
+                            <input class="ms-2 mt-3" type="checkbox" id="login-Remember-Me"/>
+                            <label for="login-Remember-Me" style="font-size: 12px;">Remember me</label>
+                            <a style="cursor: pointer; color: black;" class="ms-5" style="color: inherit; font-size: 14px;"> <strong>Forgot your password?</strong></a>
+                            <button class="mt-4" style="background-color: #be4921; color: white; padding: 0.3%; min-width: 300px; border: 2px solid white;" type="button" id="btn-login"><strong>SIGN IN</strong></button>
                     </div>
-
+                    
                     <div class="mt-4" style="border: 1px solid rgb(0, 0, 0); max-width: 18%; margin-left: 41%; opacity: 0.2;"></div>
-
 
                     <div>
                         <h2 class="mt-4"> <strong>NOT A MEMBER?</strong></h2>
-
                         <h5 style="opacity: 0.5;"><strong>JOIN REWARDS. GET REWARDED.</strong></h5>
-
                         <button class="mt-4" style="background-color: white; color:#be4921; padding: 0.3%; min-width: 300px; border:2px solid black;" type="button" id="btn-create"><strong>CREATE AN ACCOUNT</strong></button>
                     </div>
 
-                    <div class="mt-4 d-flex jutify-content-center">
-
+                    <div class="mt-4 d-flex justify-content-center">
                         <span class="material-symbols-outlined me-2" style="max-width: 2%;">chat_bubble</span>
-
                         <p> Need Help? </p>
-
                         <a class="ms-1" style="cursor: pointer; color: black;"><strong>Chat with Chicko</strong></a>
-
                     </div>
-                        
-
 
                 </form>
             </div>
         </div>
 
+        <div id="register-body">
 
-        <div id="register-body"
+            <!-- Myles, Add your code here (Register Form). You can copy and paste the login (id=login-body)-->
+
+            <!--Phone12.Coop Registration ID-->
 
             <div class="header">
                 <h1><strong>CREATE AN ACCOUNT</strong></h1>
-                <div> 
-                    <p style="color: gray;"><strong>Create an account so you can get rewards and order your favorites even faaster.</strong></p>
+                <div>
+                    <p style="color: gray;"><strong>Create an account so you can get rewards and order your favorites even faster.</strong></p>
                 </div>
             </div>
 
-
-
             <div>
                 <form>
-
                         <div class="form-group">
                             <input type="text" class="form-control" id="First Name" placeholder="First Name">
 
-
                             <input type="text" class="form-control" id="Last Name" placeholder="Last Name">
-
-                
+             
                             <input type="email" class="form-control" placeholder="Email" id="Email">
-
-                
+             
                             <input type="password" class="form-control" placeholder=Password id="Password">
-
                             
-
                             <div class="mt-1" style="font-size: 12px;">
-
                                 <p> Create a password with these requirements: </p>
-
                                 <p style="margin-top: -15px; word-spacing: 15px; font-weight: 800;"> ABC abc   123   !@%    8-characters  </p>
-
                             </div>
 
-
                             <input type="street" class="form-control" id="Street" placeholder="Street">
-
                             
                             <input type="city" class="form-control" id="City" placeholder="City">
-
                             
                             <input type="state" class="form-control" id="State" placeholder="State">
-
                             
                             <input type="zip" class="form-control" id="Zip" placeholder="Zip">
-
                             
                             <input type="county" class="form-control" id="County" placeholder="County">
-
-                                    
+                                 
                             <input type="country" class="form-control" id="Country" placeholder="Country">
 
-    
                             <input type="tel" class="form-control" name="telephone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" id="Telephone" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)"/>
-
-
+                            
                             <div class="mt-1 ms-2" style="font-size: 12px; text-align: start;">
                                 <p>Enter a valid mobile number that can accept SMS messages. This will be used for two-step verification for account access, and for order-related notifications.</p>
                             </div>
 
-
-                            <button class="mt-4" style="background-color: white; color: #be4921; padding: 0.3%; min-width: 300px; border:2px solid black;" type="button" id="btn-register-signup"><strong>SIGN UP</strong></button>
-
-
+                            <button class="mt-4" style="background-color: white; color:#be4921; padding: 0.3%; min-width: 300px; border:2px solid black;" type="button" id="btn-register-signup"><strong>SIGN UP</strong></button>
+                
                         </div>
-
+                    
                     <div class="mt-4" style="border: 1px solid rgb(0, 0, 0); max-width: 18%; margin-left: 41%; opacity: 0.2;"></div>
 
-
                     <div>
-
                         <h2 class="mt-4"> <strong>ALREAY A MEMBER?</strong></h2>
-
                         <h5 style="opacity: 0.5;"><strong>JOIN REWARDS. GET REWARDED.</strong></h5>
-
                         <button class="mt-4" style="background-color: #be4921; color: white; padding: 0.3%; min-width: 300px; border: 2px solid white;" type="button" id="btn-register-login"><strong>LOG IN</strong></button>
-
                     </div>
-
 
                     <div class="mt-4 d-flex justify-content-center">
-
                         <span class="material-symbols-outlined me-2" style="max-width: 2%;">chat_bubble</span>
-
                         <p> Need Help? </p>
-
                         <a class="ms-1" style="cursor: pointer; color: black;"><strong>Chat with Chicko</strong></a>
-
                     </div>
-
                 </form>
             </div>
         </div>
 
-
-        <div class="mt-5" id="error-page">
+        <div class="mt-5" id="error-page"> 
             <img class="mb-3" src="/Images/traffic-cone.png" alt="Traffic Cone representing maintenance" style="max-width: 10%;">
-
             <h1 style="font-weight: 900; color: #be4921;"><strong>We're Under Maintenance</strong></h1>
-
             <p style="font-weight: 600;"> Our Website is under temporary maintenance, we will back soon :)</p>
         </div>
-
 
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+<script>
+
+    //declare the content that will go inside loading-chicken gif
+    var object = {
+        src: "/Images/chickenwalking.gif",
+        id: "chicken-animation"
+    };
+
+    //declare the lists that will be using to check if inputs are empty
+    var inputs = ["First Name", "Last Name", "Email", "Password", "Street", "City", "State", "Zip", "County", "Country", "Telephone"];
+    var emptyInputs = [];
+
+
+//<img src="/Images/chickenwalking.gif" alt="Animated Chicken Walking" style="visibility: hidden;">
+
+    // Windows on load hide register form and maintenance page
+    $(window).ready(function(){
+        $('#register-body').hide();
+        $('#error-page').hide(); 
+    })
+
+    // If statement check if all necessary elements are filled. If not, alert, if yes:
+    //When Create an Account is pressed from login: Login form disappear, Chicken load runs and Register form appears
+    $('#btn-create').on('click',function(){        
+
+        $('#login-body').fadeOut('slow')
+        $('#logo').fadeOut('slow')
+
+        // Check if loading chicken does not exist in order to not create another one everytime button is clicked
+        if($('#loading-chicken').css('display') == 'none') { // Display none means chicken has already been created
+            
+            setTimeout(function() {
+                $('#loading-chicken').fadeIn('slow');}, 1000);
+            
+            setTimeout(function() {
+                $('#loading-chicken').fadeOut('slow');},3000);
+            
+            setTimeout(function() {
+                $('#logo').fadeIn('slow');
+                $('#register-body').fadeIn('slow');
+            },3500);
+            
+        } else {
+
+            let addition = $('<img>', object);
+            
+            setTimeout(function() {
+                $('#loading-chicken').append(addition);}, 1000);
+            
+            setTimeout(function() {
+                $('#loading-chicken').fadeOut('slow');},3000);
+            
+            setTimeout(function() {
+                $('#logo').fadeIn('slow');
+                $('#register-body').fadeIn('slow');
+            },3500);
+        }
+    });
+
+    // If statement check if all necessary elements are filled. If no, alert, if yes:
+    //When Login is pressed from Register: Register form disappear, Chicken load runs and Login form appears
+    $('#btn-register-login').on('click', function(){
+        $('#register-body').fadeOut('slow');
+        $('#logo').fadeOut('slow');
+
+        let addition = $('<img>', object);
+
+        setTimeout(function() {
+            $('#loading-chicken').fadeIn('slow');}, 500);
+        
+        setTimeout(function() {
+            $('#loading-chicken').fadeOut('slow');},2000);
+        
+        setTimeout(function() {
+            $('#logo').fadeIn('slow');
+            $('#login-body').fadeIn('slow');
+        },2500);
+
+    });
+
+    // If statement check if all necessary elements are filled. If no, alert, if yes:
+    // When Sign in clicked from the Login page - Maintenance page
+    $('#btn-login').on('click',function(){
+        
+        if($('#loginEmail').val() == "" || $('#loginPassword').val() == "") {
+            Swal.fire({
+                icon: 'error',
+                title: "Email or Password can't be empty",
+                text: 'Please provide a valid email and password to login'
+            })
+        } else {
+            
+            $('#login-body').fadeOut('slow')
+            $('#logo').fadeOut('slow')
+        
+            setTimeout(function() {
+                $('#logo').fadeIn('slow');
+                $('#error-page').fadeIn('slow');},1000)
+        };
+        
+    });
+
+    // If statement check if all necessary elements are filled. If no, alert, if yes:
+    // When Sign up is clicked from the Register page - Maintenance page
+    $('#btn-register-signup').on('click',function(){
+        
+        //Check if any input is empty, and if finds one, it will throw the input to the emptyInput variable
+        for (var i=0; i < inputs.length; i++) {
+            var inputValue = $('#' + inputs[i]).val();
+            if(inputValue === '') {
+                emptyInputs.push(inputs[i]);
+            }
+        };
+
+        if (emptyInputs.length > 0) {
+            var errorMessage = "The following fields are empty and should be filled: " + emptyInputs.join(', ');
+            Swal.fire({
+                icon: 'error',
+                title: errorMessage,
+                text: 'Please provide us with all the missing information and submit again'
+            })
+        } else {
+
+            $('#register-body').fadeOut('slow')
+            $('#logo').fadeOut('slow');
+
+        setTimeout(function() {
+            $('#logo').fadeIn('slow');
+            $('#error-page').fadeIn('slow');},1000)   
+        }
+
+    });
+
+</script>
 </body>
-</html> 
+</html>
+
