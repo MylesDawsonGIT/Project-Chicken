@@ -97,6 +97,8 @@
                             </div>
 
                                 <input type="street" class="form-control mt-3" id="Street" placeholder="Street">
+
+                                <input type="street" class="form-control mt-3" id="Street2" placeholder="Street 2">
                                 
                                 <div class ="d-flex "id="#citystatezip">
 
@@ -116,8 +118,10 @@
 
                                 </div>
 
+                                <input type="text" class="form-control mt-3" placeholder="Coop ID" id="CoopID">
+
                                 <input type="tel" class="form-control mt-3" name="telephone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" id="Telephone" style="box-shadow: 0 3px 0 #be4921, 0 6px 4px -2px rgb(0 0 0 / 30%)"/>
-                                
+
                                 <div class="mt-1 ms-2" style="font-size: 12px; text-align: start;">
                                     <p>Enter a valid mobile number that can accept SMS messages. This will be used for two-step verification for account access, and for order-related notifications.</p>
                                 </div>
@@ -163,22 +167,8 @@
         id: "chicken-animation"
     };
 
-    //declare functions to check email and passwords patterns / get value of email and password in the register page
-    function isEmail(email) {
-        var emailPattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        return emailPattern.test(email);
-    };
-
-    function isPassword(password) {
-        var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
-        return passwordPattern.test(password)
-    };
-
-    emailInput = $('#Email').val();
-    passwordInput = $('#Password').val();
-
     //declare the lists that will be using to check if inputs are empty
-    var inputs = ["First Name", "Last Name", "Email", "Password", "Street", "City", "State", "Zip", "County", "Country", "Telephone"];
+    var inputs = ["First Name", "Last Name", "Email", "Password", "Street", "Street2", "City", "State", "Zip", "County", "Country", "Telephone", "CoopID"];
     var emptyInputs = [];
 
     // Windows on load hide register form and maintenance page
@@ -292,28 +282,33 @@
         } else {
 
             //Check if email and password matches the pattern
+            var email = $('#Email').val();
+            var password = $('#Password').val();
 
-            if(isEmail(emailInput) == false && isPassword(passwordInput) === false) {
-                Swal.fire({
-                icon: 'error',
-                title: 'Invalid Email and Password',
-                text: 'Please, provide a valid email and make sure the password meets the requirements'
-            })
-            } else if(isEmail(emailInput) == true && isPassword(passwordInput) == false) {
-                Swal.fire({
-                icon: 'error',
-                title: 'Invalid Email',
-                text: 'Please, provide a valid email'
-            })
-            } else if(isEmail(emailInput) == false && isPassword(passwordInput) == true) {
-                Swal.fire({
-                icon: 'error',
-                title: 'Invalid Password',
-                text: 'Please, make sure the password meets the requirements'
-            })
+        
+            var regexEmail = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            
+            if (!regexEmail.test(email) && !regexPassword.test(password)) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Email and Password invalid', 
+                        text: 'Please, provide a valid email and make sure the password meets the standards requirements'
+                    })
+            } else if  (!regexEmail.test(email)) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Email is invalid', 
+                        text: 'Please, provide a valid email'
+                    })
+            } else if (!regexPassword.test(password)) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Password is invalid', 
+                        text: 'Please, make sure the passwords meets the standards requirements'
+                    })
+
             } else {
-
-
                 // if matches, error page will pop up
                 $('#register-body').fadeOut('slow')
                 $('#logo').fadeOut('slow');
